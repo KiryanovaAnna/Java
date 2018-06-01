@@ -1,5 +1,6 @@
 package com.epam.kiryanova_anna.java.lesson2.task2.airplane;
 
+//Кирьянова Анна, 2 задание
 public class Airplane {
     private final String manufacturer;
     private final String model;
@@ -9,6 +10,11 @@ public class Airplane {
     private final double range;
 
     public Airplane(String manufacturer, String model, int capacity, double carrying, double range) {
+        if (manufacturer == null)
+            throw new IllegalArgumentException("Manufacture cannot be null");
+        if (model == null)
+            throw new IllegalArgumentException("Model cannot be null");
+
         this.manufacturer = manufacturer;
         this.model = model;
         this.capacity = capacity;
@@ -20,9 +26,7 @@ public class Airplane {
         return manufacturer;
     }
 
-    public String getModel() {
-        return model;
-    }
+    public String getModel() { return model; }
 
     public int getCapacity() {
         return capacity;
@@ -32,9 +36,7 @@ public class Airplane {
         return carrying;
     }
 
-    public double getRange() {
-        return range;
-    }
+    public double getRange() { return range; }
 
     @Override
     public String toString() {

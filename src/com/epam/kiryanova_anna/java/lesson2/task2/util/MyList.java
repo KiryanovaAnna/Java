@@ -1,8 +1,6 @@
 package com.epam.kiryanova_anna.java.lesson2.task2.util;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
 
 public class MyList<Type> {
     private Type[] list;
