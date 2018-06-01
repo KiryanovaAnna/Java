@@ -6,12 +6,13 @@ import com.epam.kiryanova_anna.java.lesson2.task2.airplane.airbus.planes.AirbusA
 import com.epam.kiryanova_anna.java.lesson2.task2.airplane.boeing.planes.Boeing737;
 import com.epam.kiryanova_anna.java.lesson2.task2.airplane.boeing.planes.Boeing777;
 import com.epam.kiryanova_anna.java.lesson2.task2.airplane.embraer.Embraer;
-import com.epam.kiryanova_anna.java.lesson2.task2.util.MyList;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Airline {
-    MyList<Airplane> planes = new MyList<>();
+    List<Airplane> planes = new ArrayList<>();
 
     public Airline(Airplane... airplanes) {
         for (Airplane airplane : airplanes)
@@ -36,15 +37,15 @@ public class Airline {
         return sum;
     }
 
-    public MyList sortByRange() {
+    public List<Airplane> sortByRange() {
         planes.sort(Comparator.comparingDouble(Airplane::getRange));
 
         return planes;
     }
 
-    public MyList<Airplane> findPlane(String manufacture, String model, Integer capacity1, Integer capacity2,
+    public List<Airplane> findPlane(String manufacture, String model, Integer capacity1, Integer capacity2,
                                       Double carrying1, Double carrying2, Double range1, Double range2) {
-        MyList<Airplane> result = new MyList<>();
+        List<Airplane> result = new ArrayList<>();
 
         for (int i = 0; i < planes.size(); i++) {
             Airplane airplane = planes.get(i);
