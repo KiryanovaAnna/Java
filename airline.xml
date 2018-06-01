@@ -1,0 +1,19 @@
+<Airline>
+    <Plane>
+        <Name>Boeing 777</Name>
+        <Type>Passenger</Type>
+        <Route>Moscow,Florence</Route>
+
+        <Parameter>Дальность полета,7000</Parameter>
+        <Parameter>Количество пассажиров,380</Parameter>
+    </Plane>
+
+    <Plane>
+        <Name>Airbus A340</Name>
+        <Type>Cargo</Type>
+        <Route>Omsk,Omsk</Route>
+
+        <Parameter>Дальность полета,13000 км</Parameter>
+        <Parameter>Грузоподъемность,9000 кг</Parameter>
+    </Plane>
+</Airline>
