@@ -1,7 +1,9 @@
 package com.epam.kiryanova_anna.java.lesson2.task2.airplane;
 
+import java.io.Serializable;
+
 //Кирьянова Анна, 2 задание
-public class Airplane {
+public class Airplane implements Serializable {
     private final String manufacturer;
     private final String model;
 
